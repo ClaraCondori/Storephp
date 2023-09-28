@@ -1,8 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
-.logo{
-border-radius: 58px;
-
-}
 .blanco{
     color: rgb(255, 255, 255);
     font-family: 'Courgette', cursive;
@@ -34,15 +30,6 @@ color: rgb(194, 243, 201);
     color: rgb(22, 22, 22);
     font-size: 35px;
     position: absolute;
-}
-nav, .as{
-    color: rgb(18, 18, 18);
-    text-decoration: none;
-    float:right;
-    padding: 8px;
-    font-family: 'Courgette', cursive;
-    font-size: 25px;
-
 }
 .amarillo{
     color: yellow;

@@ -1,12 +1,12 @@
 <?php
 session_start();
 if(!isset($_SESSION['usuario'])){
+    session_destroy();
     echo '
     <script>
     alert("Ususario inexistente, por favor inicie sesion o registrese");
     window.location = "index.php";
     </script>';
-    session_destroy();
     die();
 }
 ?>
@@ -16,28 +16,26 @@ if(!isset($_SESSION['usuario'])){
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/mistilos.css">
     <title>Lista de productos</title>
 </head>
 <body>
+<nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <a href="" class="enlace">
+            <img src="assets/images/logo.png" alt="" class="logo">
+        </a>
+        <ul>
+            <li><a class="active" href="menuStore.php">Volver</a></li>
+            <li><a href="">Añadir nuevo producto</a></li>
+            <li><a href="">Sobre nosotros</a></li>
+            <li><a href="php/cerrar_session.php">CERRAR SESION</a></li>
+        </ul>
+    </nav>
 <div>
-        <header class="enca">
-            <div>
-                <div>
-                STORE
-                </div>
-        <nav>
-        <ul class="nav justify-content-end">
-        <li class="nav-item">
-        <a class="nav-link active" href="registrar_prod.php">NUEVO PRODUCTO</a>
-        </li>
-        <li class="nav-item">
-    <a class="nav-link" href="php/cerrar_session.php">CERRAR SESION</a>
-    </li>
-</ul>
-        </nav>
-        </div>
-        </header>
     <h1>Productos</h1>
 
     <div class="espacio-tabla">
