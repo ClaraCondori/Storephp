@@ -30,7 +30,6 @@ if(!isset($_SESSION['usuario'])){
         </a>
         <ul>
             <li><a class="active" href="bienvenido.php">Nuestros productos</a></li>
-            <li><a href="">Añadir nuevo producto</a></li>
             <li><a href="">Sobre nosotros</a></li>
             <li><a href="php/cerrar_session.php">CERRAR SESION</a></li>
         </ul>
